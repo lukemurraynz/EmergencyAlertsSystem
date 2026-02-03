@@ -2,6 +2,8 @@
 
 A real-time emergency alert management system for creating, approving, and delivering geographically-targeted alerts to affected populations.
 
+> Related blog: [Building an Emergency Alert System on Azure with Drasi](https://luke.geek.nz/azure/emergency-alert-system-drasi/).
+
 ## What This Does
 
 This system helps emergency responders and government officials:
