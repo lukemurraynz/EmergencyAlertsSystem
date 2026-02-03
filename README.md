@@ -12,6 +12,8 @@ This system helps emergency responders and government officials:
 - **Monitor** alert status and delivery in real-time through a SignalR-powered dashboard
 - **Track** geographic patterns, SLA breaches, and operational metrics via automated workflows
 
+![Emergency Alert System](docs/EmergencyAlertSystemOverviewDashboard.jpg)
+
 ## Architecture Overview
 
 The system runs on Azure Kubernetes Service (AKS) with three main components:
