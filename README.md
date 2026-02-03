@@ -23,7 +23,7 @@ The system runs on Azure Kubernetes Service (AKS) with three main components:
 ```
 ┌─────────────┐      ┌──────────────┐      ┌────────────┐
 │   Frontend  │─────▶│   Backend    │─────▶│ PostgreSQL │
-│ React + TS  │      │  .NET 8 API  │      │ + PostGIS  │
+│ React + TS  │      │  .NET 10 API │      │ + PostGIS  │
 └─────────────┘      └──────────────┘      └────────────┘
                             │                      │
                             │                      │
@@ -44,7 +44,7 @@ See [Architecture Diagrams](docs/diagrams/emergency-alerts-architecture.drawio) 
 
 ### Key Technologies
 
-- **Backend**: .NET 8 (C#) with DDD-lite architecture (Domain, Application, Infrastructure layers)
+- **Backend**: .NET 10 (C#) with DDD-lite architecture (Domain, Application, Infrastructure layers)
 - **Frontend**: React 19 + TypeScript + Vite + Fluent UI v9
 - **Database**: PostgreSQL with PostGIS extension for geospatial queries
 - **Infrastructure**: Azure (AKS, App Configuration, Key Vault, ACR, Azure Maps)
@@ -54,7 +54,7 @@ See [Architecture Diagrams](docs/diagrams/emergency-alerts-architecture.drawio) 
 ## Project Structure
 
 ```
-├── backend/              # .NET 8 API and domain logic
+├── backend/              # .NET 10 API and domain logic
 │   ├── src/
 │   │   ├── EmergencyAlerts.Api/          # REST API + SignalR hub
 │   │   ├── EmergencyAlerts.Application/  # Commands, queries, services
@@ -129,7 +129,7 @@ See [Drasi README](infrastructure/drasi/README.md) for deployment and query deta
 - Azure CLI 2.60+
 - kubectl 1.29+
 - Drasi CLI
-- .NET 8 SDK (for local development)
+- .NET 10 SDK (for local development)
 - Node.js 20+ (for frontend development)
 
 ### Deploy to Azure
