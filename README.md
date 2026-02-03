@@ -73,9 +73,6 @@ See [Architecture Diagrams](docs/diagrams/emergency-alerts-architecture.drawio) 
 │
 ├── docs/                # Architecture and runbooks
 │   └── diagrams/        # Draw.io architecture diagrams
-│
-└── specs/               # Feature specifications (ADRs, contracts)
-    └── 001-emergency-alert-core/  # Core API spec, OpenAPI contracts
 ```
 
 ## How It Works
@@ -180,8 +177,6 @@ dotnet ef database update
 ```
 
 ## API Reference
-
-See [OpenAPI Contract](specs/001-emergency-alert-core/contracts/alerts-api.yaml) for complete API documentation.
 
 **Key Endpoints:**
 - `POST /api/v1/alerts` - Create new alert (returns 201 with ETag)
